@@ -1,0 +1,19 @@
+backends:
+  - localhost:9001
+  - localhost:9002
+  - localhost:9003
+
+mode: l7
+
+strategy: roundrobin
+
+allowed_cidrs:
+  - "127.0.0.1/32"
+  - "::1/128"
+
+rate_limit: 5
+burst: 10
+
+tls: true
+tls_cert: "./cert.pem"
+tls_key: "./key.pem"
