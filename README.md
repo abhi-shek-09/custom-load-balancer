@@ -83,6 +83,10 @@ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -node
 This generates cert.pem and key.pem for TLS termination.
 
 #### 4. Start the Load Balancer
+Enter your inputs in the config.yaml file as below
+
+![image](https://github.com/user-attachments/assets/70699df6-20dc-4cc3-80e5-43fe5f47d55e)
+
 ``` 
 go run main.go --config=config.yaml 
 ```
@@ -100,3 +104,9 @@ L7
 ``` 
 curl -k https://localhost:8443
 ```
+
+## Output
+![image](https://github.com/user-attachments/assets/261976b8-7bc5-46eb-912d-7a9893f19d22)
+
+
+
