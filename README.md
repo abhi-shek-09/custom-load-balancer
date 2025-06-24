@@ -1,4 +1,4 @@
-# Go Load Balancer Project
+# Load Balancer
 A modern, flexible load balancer supporting both Layer 4 (TCP) and Layer 7 (HTTP/HTTPS) modes, with multiple routing strategies, health checks, TLS termination, retry logic, logging, IP-filtering and rate limiting.
 
 ## Features
